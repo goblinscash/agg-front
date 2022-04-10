@@ -1,14 +1,14 @@
-# Beefy Finance (\$BIFI)
+# Goblins Yield Aggregator
 
 ## Overview
 
-Official frontend repo of [beefy.finance](https://app.beefy.finance). Multichain yield farming optimizer.
+Official frontend repo of [Goblins.cash](https://goblins.cash). Bitcoin Cash (BCH) Yield farming optimizer.
 
 ## Env
 
 Required env vars:
 ```
-REACT_APP_NETWORK_ID = 56 // Network ID of BSC
+REACT_APP_NETWORK_ID = 10000 // Network ID of BCH
 ```
 
 ## To Run to test against a local development server 
@@ -22,7 +22,7 @@ If any error is noted during validation, fix before starting the server, which w
 
 ## Contribute
 
-Beefy.Finance exists thanks to its contributors. There are many ways you can participate and help build high quality software. Check out the [contribution guide](CONTRIBUTING.md)!
+Goblins.cash exists thanks to its contributors. There are many ways you can participate and help build high quality software. 
 
 ## License
 

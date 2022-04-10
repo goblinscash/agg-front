@@ -1,5 +1,5 @@
 import { bscPools } from '../src/features/configure/vault/bsc_pools.js';
-import { hecoPools } from '../src/features/configure/vault/heco_pools.js';
+/*import { hecoPools } from '../src/features/configure/vault/heco_pools.js';
 import { avalanchePools } from '../src/features/configure/vault/avalanche_pools.js';
 import { polygonPools } from '../src/features/configure/vault/polygon_pools.js';
 import { fantomPools } from '../src/features/configure/vault/fantom_pools.js';
@@ -11,11 +11,11 @@ import { cronosPools } from '../src/features/configure/vault/cronos_pools.js';
 import { auroraPools } from '../src/features/configure/vault/aurora_pools.js';
 import { fusePools } from '../src/features/configure/vault/fuse_pools.js';
 import { metisPools } from '../src/features/configure/vault/metis_pools.js';
-import { moonbeamPools } from '../src/features/configure/vault/moonbeam_pools.js';
+import { moonbeamPools } from '../src/features/configure/vault/moonbeam_pools.js';*/
 
 export const chainPools = {
   bsc: bscPools,
-  heco: hecoPools,
+  /*heco: hecoPools,
   avax: avalanchePools,
   polygon: polygonPools,
   fantom: fantomPools,
@@ -27,12 +27,12 @@ export const chainPools = {
   aurora: auroraPools,
   fuse: fusePools,
   metis: metisPools,
-  moonbeam: moonbeamPools,
+  moonbeam: moonbeamPools,*/
 };
 
 export const chainRpcs = {
   bsc: process.env.BSC_RPC || 'https://bsc-dataseed.binance.org/',
-  heco: process.env.HECO_RPC || 'https://http-mainnet.hecochain.com',
+  /*heco: process.env.HECO_RPC || 'https://http-mainnet.hecochain.com',
   avax: process.env.AVAX_RPC || 'https://api.avax.network/ext/bc/C/rpc',
   polygon: process.env.POLYGON_RPC || 'https://polygon-rpc.com',
   fantom: process.env.FANTOM_RPC || 'https://rpc.ftm.tools/',
@@ -44,5 +44,5 @@ export const chainRpcs = {
   aurora: process.env.AURORA_RPC || 'https://mainnet.aurora.dev/',
   fuse: process.env.FUSE_RPC || 'https://rpc.fuse.io',
   metis: process.env.METIS_RPC || 'https://andromeda.metis.io/?owner=1088',
-  moonbeam: process.env.MOONBEAM_RPC || 'https://rpc.api.moonbeam.network',
+  moonbeam: process.env.MOONBEAM_RPC || 'https://rpc.api.moonbeam.network',*/
 };
