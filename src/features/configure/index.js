@@ -30,8 +30,8 @@ export {
   auroraAddressBook,
   fuseAddressBook,
   metisAddressBook,
-  moonbeamAddressBook,
-};*/
+  moonbeamAddressBook,*/
+};
 
 export {
   vaultABI,
