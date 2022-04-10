@@ -360,7 +360,7 @@ export const getNetworkStables = () => {
     case 56:
       return [
         'BUSD',
-        /*'USDT',
+        'USDT',
         'USDC',
         'DAI',
         'VAI',
@@ -377,7 +377,7 @@ export const getNetworkStables = () => {
         'WUSD',
         'USDO',
       ];
-    case 128:
+    /*case 128:
       return ['USDT', 'HUSD'];
     case 43114:
       return [
