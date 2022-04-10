@@ -155,9 +155,9 @@ export const getNetworkPools = () => {
     case 1088:
       return metisPools;
     case 1284:
-      return moonbeamPools;*/
+      return moonbeamPools;
     default:
-      return [];
+      return [];*/
   }
 };
 
@@ -190,9 +190,9 @@ export const getNetworkVaults = (networkId = appNetworkId) => {
     case 1088:
       return indexBy(metisPools, 'id');
     case 1284:
-      return indexBy(moonbeamPools, 'id');*/
+      return indexBy(moonbeamPools, 'id');
     default:
-      return {};
+      return {};*/
   }
 };
 
@@ -225,9 +225,9 @@ export const getNetworkLaunchpools = (networkId = appNetworkId) => {
     case 1088:
       return indexBy(metisStakePools, 'id');
     case 1284:
-      return indexBy(moonbeamStakePools, 'id');*/
+      return indexBy(moonbeamStakePools, 'id');
     default:
-      return {};
+      return {};*/
   }
 };
 
@@ -349,9 +349,9 @@ export const getNetworkZaps = () => {
     case 1088:
       return metisZaps;
     case 1284:
-      return moonbeamZaps;*/
+      return moonbeamZaps;
     default:
-      return [];
+      return [];*/
   }
 };
 
@@ -462,9 +462,9 @@ export const getNetworkStables = () => {
     case 1088:
       return ['mUSDT', 'mUSDC'];
     case 1284:
-      return ['USDC', 'USDT', 'DAI', 'BUSD'];*/
+      return ['USDC', 'USDT', 'DAI', 'BUSD'];
     default:
-      return [];
+      return [];*/
   }
 };
 
@@ -472,7 +472,7 @@ export const getNetworkMulticall = () => {
   switch (window.REACT_APP_NETWORK_ID) {
     case 56:
       return '0xB94858b0bB5437498F5453A16039337e5Fdc269C';
-    case 128:
+    /*case 128:
       return '0x2776CF9B6E2Fa7B33A37139C3CB1ee362Ff0356e';
     case 43114:
       return '0x6FfF95AC47b586bDDEea244b3c2fe9c4B07b9F76';
@@ -499,7 +499,7 @@ export const getNetworkMulticall = () => {
     case 1284:
       return '0xC9F6b1B53E056fd04bE5a197ce4B2423d456B982';
     default:
-      return '';
+      return '';*/
   }
 };
 
