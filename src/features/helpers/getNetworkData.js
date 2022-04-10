@@ -6,15 +6,15 @@ import WalletLink from 'walletlink';
 import { CloverConnector } from '@clover-network/clover-connector';
 import { allNetworks } from '../../network';
 import {
-  avalanchePools,
+  /*avalanchePools,
   avalancheStakePools,
   avaxAddressBook,
-  avalancheZaps,
+  avalancheZaps,*/
   bscPools,
   bscStakePools,
   bscAddressBook,
   bscZaps,
-  fantomPools,
+  /*fantomPools,
   fantomStakePools,
   fantomAddressBook,
   fantomZaps,
@@ -62,7 +62,7 @@ import {
   moonbeamPools,
   moonbeamStakePools,
   moonbeamAddressBook,
-  moonbeamZaps,
+  moonbeamZaps,*/
 } from '../configure';
 
 export const appNetworkId = window.REACT_APP_NETWORK_ID;
@@ -130,7 +130,7 @@ export const getNetworkPools = () => {
   switch (window.REACT_APP_NETWORK_ID) {
     case 56:
       return bscPools;
-    case 128:
+    /*case 128:
       return hecoPools;
     case 43114:
       return avalanchePools;
@@ -155,7 +155,7 @@ export const getNetworkPools = () => {
     case 1088:
       return metisPools;
     case 1284:
-      return moonbeamPools;
+      return moonbeamPools;*/
     default:
       return [];
   }
@@ -165,7 +165,7 @@ export const getNetworkVaults = (networkId = appNetworkId) => {
   switch (networkId) {
     case 56:
       return indexBy(bscPools, 'id');
-    case 128:
+    /*case 128:
       return indexBy(hecoPools, 'id');
     case 43114:
       return indexBy(avalanchePools, 'id');
@@ -190,7 +190,7 @@ export const getNetworkVaults = (networkId = appNetworkId) => {
     case 1088:
       return indexBy(metisPools, 'id');
     case 1284:
-      return indexBy(moonbeamPools, 'id');
+      return indexBy(moonbeamPools, 'id');*/
     default:
       return {};
   }
@@ -200,7 +200,7 @@ export const getNetworkLaunchpools = (networkId = appNetworkId) => {
   switch (networkId) {
     case 56:
       return indexBy(bscStakePools, 'id');
-    case 128:
+    /*case 128:
       return indexBy(hecoStakePools, 'id');
     case 43114:
       return indexBy(avalancheStakePools, 'id');
@@ -225,7 +225,7 @@ export const getNetworkLaunchpools = (networkId = appNetworkId) => {
     case 1088:
       return indexBy(metisStakePools, 'id');
     case 1284:
-      return indexBy(moonbeamStakePools, 'id');
+      return indexBy(moonbeamStakePools, 'id');*/
     default:
       return {};
   }
@@ -236,7 +236,7 @@ export const getNetworkTokens = () => {
   switch (chainId) {
     case 56:
       return bscAddressBook.tokens;
-    case 128:
+    /*case 128:
       return hecoAddressBook.tokens;
     case 43114:
       return avaxAddressBook.tokens;
@@ -261,7 +261,7 @@ export const getNetworkTokens = () => {
     case 1088:
       return metisAddressBook.tokens;
     case 1284:
-      return moonbeamAddressBook.tokens;
+      return moonbeamAddressBook.tokens;*/
     default:
       throw new Error(
         `Create address book for chainId(${chainId}) first. Check out https://github.com/beefyfinance/address-book`
@@ -278,7 +278,7 @@ export const getNetworkBurnTokens = () => {
         [bscAddressBook.tokens.PEAR.symbol]: bscAddressBook.tokens.PEAR,
         [bscAddressBook.tokens.SING.symbol]: bscAddressBook.tokens.SING,
       };
-    case 128:
+    /*case 128:
       return {};
     case 43114:
       return {
@@ -314,7 +314,7 @@ export const getNetworkBurnTokens = () => {
     case 1088:
       return {};
     case 1284:
-      return {};
+      return {};*/
     default:
       throw new Error(`Create address book for this chainId first.`);
   }
@@ -324,7 +324,7 @@ export const getNetworkZaps = () => {
   switch (window.REACT_APP_NETWORK_ID) {
     case 56:
       return bscZaps;
-    case 128:
+    /*case 128:
       return hecoZaps;
     case 43114:
       return avalancheZaps;
@@ -349,7 +349,7 @@ export const getNetworkZaps = () => {
     case 1088:
       return metisZaps;
     case 1284:
-      return moonbeamZaps;
+      return moonbeamZaps;*/
     default:
       return [];
   }
@@ -360,7 +360,7 @@ export const getNetworkStables = () => {
     case 56:
       return [
         'BUSD',
-        'USDT',
+        /*'USDT',
         'USDC',
         'DAI',
         'VAI',
@@ -462,7 +462,7 @@ export const getNetworkStables = () => {
     case 1088:
       return ['mUSDT', 'mUSDC'];
     case 1284:
-      return ['USDC', 'USDT', 'DAI', 'BUSD'];
+      return ['USDC', 'USDT', 'DAI', 'BUSD'];*/
     default:
       return [];
   }
@@ -604,7 +604,7 @@ export const getNetworkConnectors = t => {
           },
         },
       };
-    case 128:
+    /*case 128:
       return {
         network: 'heco',
         cacheProvider: true,
@@ -1214,7 +1214,7 @@ export const getNetworkConnectors = t => {
             return provider;
           },
         },
-      };
+      };*/
     default:
       return {};
   }
