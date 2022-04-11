@@ -224,7 +224,7 @@ export const bscStakePools = [
     ],
   },
 
-  {
+  /*{
     id: 'moo_baby-usdt-milk-babyswap',
     name: 'BabySwap',
     assets: ['MILK', 'USDT'],
@@ -3171,5 +3171,5 @@ export const bscStakePools = [
         },
       },
     ],
-  },
+  },*/
 ];

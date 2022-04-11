@@ -171,7 +171,7 @@ export const bscPools = [
       'https://pancakeswap.finance/swap?outputCurrency=0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56',
     createdAt: 1648672017,
   },
-  {
+  /*{
     id: 'stargate-bsc-usdt',
     name: 'USDT LP',
     token: 'S*USDT',
@@ -18157,5 +18157,5 @@ export const bscPools = [
     buyTokenUrl:
       'https://pancakeswap.finance/swap?outputCurrency=0x4be63a9b26EE89b9a3a13fd0aA1D0b2427C135f8',
     createdAt: 1640795451,
-  },
+  },*/
 ];
