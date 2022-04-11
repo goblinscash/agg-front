@@ -13,6 +13,7 @@ import {
   bscZaps,
   smartbchPools,
   smartbchAddressBook,
+  smartbchZaps,
   /*avalanchePools,
   avalancheStakePools,
   avaxAddressBook,
