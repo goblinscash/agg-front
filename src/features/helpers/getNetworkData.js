@@ -12,8 +12,8 @@ import {
   bscAddressBook,
   bscZaps,
   smartbchPools,
-  smartbchAddressBook,
-  smartbchZaps,
+  //smartbchAddressBook,
+  //smartbchZaps,
   /*avalanchePools,
   avalancheStakePools,
   avaxAddressBook,
@@ -125,6 +125,7 @@ const networkBuyUrls = {
   122: '',
   1088: 'https://netswap.io/#/swap?outputCurrency=0xe6801928061cdbe32ac5ad0634427e140efd05f9',
   1284: '',
+  10000: 'https://app.mistswap.fi/swap?inputCurrency=0x5fA664f69c2A4A3ec94FaC3cBf7049BD9CA73129&outputCurrency=',
 };
 
 export const getNetworkCoin = () => {
@@ -135,8 +136,8 @@ export const getNetworkPools = () => {
   switch (window.REACT_APP_NETWORK_ID) {
     case 56:
       return bscPools;
-    case 10000:
-      return smartbchPools;
+    //case 10000:
+    //  return smartbchPools;
     /*case 128:
       return hecoPools;
     case 43114:
@@ -245,8 +246,8 @@ export const getNetworkTokens = () => {
   switch (chainId) {
     case 56:
       return bscAddressBook.tokens;
-    case 10000:
-      return smartbchAddressBook.tokens;
+    //case 10000:
+    //  return smartbchAddressBook.tokens;
     /*case 128:
       return hecoAddressBook.tokens;
     case 43114:
@@ -337,8 +338,8 @@ export const getNetworkZaps = () => {
   switch (window.REACT_APP_NETWORK_ID) {
     case 56:
       return bscZaps;
-    case 10000:
-      return smartbchZaps;
+    //case 10000:
+    //  return smartbchZaps;
     /*case 128:
       return hecoZaps;
     case 43114:

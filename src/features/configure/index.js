@@ -2,8 +2,8 @@ import { addressBook } from 'blockchain-addressbook';
 
 const {
   bsc: bscAddressBook,
-  smartbch: smartbchAddressBook,
-  /*polygon: polygonAddressBook,
+  /*smartbch: smartbchAddressBook,
+  polygon: polygonAddressBook,
   heco: hecoAddressBook,
   celo: celoAddressBook,
   avax: avaxAddressBook,  
@@ -19,8 +19,8 @@ const {
 } = addressBook;
 export {
   bscAddressBook,
-  smartbchAddressBook,
-  /*hecoAddressBook,
+  /*smartbchAddressBook,
+  hecoAddressBook,
   celoAddressBook,
   avaxAddressBook,
   polygonAddressBook,
@@ -51,8 +51,8 @@ export { bscPools } from './vault/bsc_pools';
 export { bscStakePools } from './stake/bsc_stake';
 export { bscZaps } from './zap/bsc_zaps';
 export { smartbchPools } from './vault/smartbch_pools';
-export { smartbchZaps } from './zap/smartbch_zaps';
-/*export { hecoStakePools } from './stake/heco_stake';
+/*export { smartbchZaps } from './zap/smartbch_zaps';
+export { hecoStakePools } from './stake/heco_stake';
 export { avalancheStakePools } from './stake/avalanche_stake';
 export { celoStakePools } from './stake/celo_stake';
 export { moonriverStakePools } from './stake/moonriver_stake';
