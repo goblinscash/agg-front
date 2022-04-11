@@ -5,8 +5,7 @@ import { DeFiConnector } from 'deficonnect';
 import WalletLink from 'walletlink';
 import { CloverConnector } from '@clover-network/clover-connector';
 import { allNetworks } from '../../network';
-import { nativeCoins } from '/features/configure/native_coins.js';
-
+import {
   /*avalanchePools,
   avalancheStakePools,
   avaxAddressBook,
@@ -22,9 +21,9 @@ import { nativeCoins } from '/features/configure/native_coins.js';
   hecoPools,
   hecoStakePools,
   hecoAddressBook,
-  hecoZaps,
+  hecoZaps,*/
   nativeCoins,
-  polygonPools,
+ /* polygonPools,
   polygonStakePools,
   polygonAddressBook,
   polygonZaps,
@@ -64,6 +63,7 @@ import { nativeCoins } from '/features/configure/native_coins.js';
   moonbeamStakePools,
   moonbeamAddressBook,
   moonbeamZaps,*/
+} from '../configure';
 
 export const appNetworkId = window.REACT_APP_NETWORK_ID;
 
