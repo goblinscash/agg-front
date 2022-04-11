@@ -1,4 +1,15 @@
 export const networkSettings = {
+  10000: {
+    chainId: `0x${parseInt(10000, 10).toString(16)}`,
+    chainName: 'SmartBCH Mainnet',
+    nativeCurrency: {
+      name: 'SmartBCH',
+      symbol: 'BCH',
+      decimals: 18,
+    },
+    rpcUrls: ['https://smartbch.greyh.at'],
+    blockExplorerUrls: ['https://smartscan.cash/'],
+  },
   56: {
     chainId: `0x${parseInt(56, 10).toString(16)}`,
     chainName: 'BSC Mainnet',
