@@ -5,8 +5,8 @@ import { DeFiConnector } from 'deficonnect';
 import WalletLink from 'walletlink';
 import { CloverConnector } from '@clover-network/clover-connector';
 import { allNetworks } from '../../network';
-//import { nativeCoins } from '/../configure/native_coins.js';
-import {
+import { nativeCoins } from '/features/configure/native_coins.js';
+
   /*avalanchePools,
   avalancheStakePools,
   avaxAddressBook,
