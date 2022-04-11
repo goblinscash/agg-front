@@ -11,7 +11,7 @@ import {
   bscStakePools,
   bscAddressBook,
   bscZaps,
-  bchPools,
+  smartbchPools,
   /*avalanchePools,
   avalancheStakePools,
   avaxAddressBook,
@@ -101,7 +101,7 @@ const networkFriendlyName = {
   122: 'Fuse',
   1088: 'Metis',
   1284: 'Moonbeam',
-  10000: 'BCH',
+  10000: 'SmartBCH',
 };
 
 const networkBuyUrls = {
@@ -134,7 +134,7 @@ export const getNetworkPools = () => {
     case 56:
       return bscPools;
     case 10000:
-      return bchPools;
+      return smartbchPools;
     /*case 128:
       return hecoPools;
     case 43114:
@@ -171,7 +171,7 @@ export const getNetworkVaults = (networkId = appNetworkId) => {
     case 56:
       return indexBy(bscPools, 'id');
     case 10000:
-      return indexBy(bchPools, 'id');
+      return indexBy(smartbchPools, 'id');
     /*case 128:
       return indexBy(hecoPools, 'id');
     case 43114:
@@ -244,7 +244,7 @@ export const getNetworkTokens = () => {
     case 56:
       return bscAddressBook.tokens;
     case 10000:
-      return bchAddressBook.tokens;
+      return smartbchAddressBook.tokens;
     /*case 128:
       return hecoAddressBook.tokens;
     case 43114:
@@ -336,7 +336,7 @@ export const getNetworkZaps = () => {
     case 56:
       return bscZaps;
     case 10000:
-      return bchZaps;
+      return smartbchZaps;
     /*case 128:
       return hecoZaps;
     case 43114:
