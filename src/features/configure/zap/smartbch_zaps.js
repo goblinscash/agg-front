@@ -1,4 +1,4 @@
-export const bscZaps = [
+export const smartbchZaps = [
   {
     // Mistswap
     zapAddress: '0x3229bC8cE832360692cf5f0F04726533C8EA14E3',
