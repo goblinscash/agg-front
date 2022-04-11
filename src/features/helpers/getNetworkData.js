@@ -64,7 +64,6 @@ import { nativeCoins } from '/features/configure/native_coins.js';
   moonbeamStakePools,
   moonbeamAddressBook,
   moonbeamZaps,*/
-} 
 
 export const appNetworkId = window.REACT_APP_NETWORK_ID;
 
