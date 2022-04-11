@@ -7,15 +7,14 @@ import { CloverConnector } from '@clover-network/clover-connector';
 import { allNetworks } from '../../network';
 import { nativeCoins } from '../configure/native_coins.js';
 import {
-  /*avalanchePools,
-  avalancheStakePools,
-  avaxAddressBook,
-  avalancheZaps,*/
   bscPools,
   bscStakePools,
   bscAddressBook,
   bscZaps,
-  nativeCoins,
+  /*avalanchePools,
+  avalancheStakePools,
+  avaxAddressBook,
+  avalancheZaps,*/
   /*fantomPools,
   fantomStakePools,
   fantomAddressBook,
