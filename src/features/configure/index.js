@@ -2,7 +2,7 @@ import { addressBook } from 'blockchain-addressbook';
 
 const {
   bsc: bscAddressBook,
-  smartbch: bchAddressBook,
+  smartbch: smartbchAddressBook,
   /*polygon: polygonAddressBook,
   heco: hecoAddressBook,
   celo: celoAddressBook,
