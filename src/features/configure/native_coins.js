@@ -8,6 +8,14 @@ export const nativeCoins = [
     allowance: Infinity,
   },
   {
+    chainId: 10000,
+    name: 'Bitcoin Cash',
+    symbol: 'BCH',
+    decimals: 18,
+    wrappedSymbol: 'WBCH',
+    allowance: Infinity,
+  },
+  {
     chainId: 56,
     name: 'Binance Coin',
     symbol: 'BNB',

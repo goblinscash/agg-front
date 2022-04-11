@@ -1,0 +1,37 @@
+export const bchPools = [
+  {
+    id: '7',
+    name: 'MIST-BCH LP',
+    token: 'MIST-BCH MLP',
+    tokenDescription: 'Mistswap',
+    tokenAddress: '0x674A71E69fe8D5cCff6fdcF9F1Fa4262Aa14b154',
+    tokenDecimals: 18,
+    tokenDescriptionUrl: '#',
+    earnedToken: 'Mist',
+    earnedTokenAddress: '0x5fA664f69c2A4A3ec94FaC3cBf7049BD9CA73129',
+    earnContractAddress: '0x5fA664f69c2A4A3ec94FaC3cBf7049BD9CA73129',
+    pricePerFullShare: 1,
+    tvl: 0,
+    oracle: 'lps',
+    oracleId: '7',
+    oraclePrice: 0,
+    depositsPaused: false,
+    status: 'active',
+    platform: 'Mistswap',
+    assets: ['MIST', 'BCH'],
+    risks: [
+      'COMPLEXITY_LOW',
+      'BATTLE_TESTED',
+      'IL_LOW',
+      'MCAP_MICRO',
+      'PLATFORM_ESTABLISHED',
+      'CONTRACTS_VERIFIED',
+    ],
+    stratType: 'StratLP',
+    addLiquidityUrl:
+      'hhttps://app.mistswap.fi/add/0x5fA664f69c2A4A3ec94FaC3cBf7049BD9CA73129/BCH',
+    buyTokenUrl:
+      'https://app.mistswap.fi/swap?inputCurrency=0x5fA664f69c2A4A3ec94FaC3cBf7049BD9CA73129&outputCurrency=',
+    createdAt: 1648847501,
+  },
+];

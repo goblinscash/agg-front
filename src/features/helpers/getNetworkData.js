@@ -11,6 +11,7 @@ import {
   bscStakePools,
   bscAddressBook,
   bscZaps,
+  bchPools,
   /*avalanchePools,
   avalancheStakePools,
   avaxAddressBook,
@@ -82,6 +83,7 @@ const networkTxUrls = {
   122: hash => `https://explorer.fuse.io/tx/${hash}`,
   1088: hash => `https://andromeda-explorer.metis.io/tx/${hash}`,
   1284: hash => `https://moonscan.io/tx/${hash}`,
+  10000: hash => `https://smartscan.cash/tx/${hash}`,
 };
 
 const networkFriendlyName = {
@@ -99,6 +101,7 @@ const networkFriendlyName = {
   122: 'Fuse',
   1088: 'Metis',
   1284: 'Moonbeam',
+  10000: 'BCH',
 };
 
 const networkBuyUrls = {
@@ -130,6 +133,8 @@ export const getNetworkPools = () => {
   switch (window.REACT_APP_NETWORK_ID) {
     case 56:
       return bscPools;
+    case 10000:
+      return bchPools;
     /*case 128:
       return hecoPools;
     case 43114:
@@ -165,6 +170,8 @@ export const getNetworkVaults = (networkId = appNetworkId) => {
   switch (networkId) {
     case 56:
       return indexBy(bscPools, 'id');
+    case 10000:
+      return indexBy(bchPools, 'id');
     /*case 128:
       return indexBy(hecoPools, 'id');
     case 43114:
@@ -236,6 +243,8 @@ export const getNetworkTokens = () => {
   switch (chainId) {
     case 56:
       return bscAddressBook.tokens;
+    case 10000:
+      return bchAddressBook.tokens;
     /*case 128:
       return hecoAddressBook.tokens;
     case 43114:
@@ -278,6 +287,8 @@ export const getNetworkBurnTokens = () => {
         [bscAddressBook.tokens.PEAR.symbol]: bscAddressBook.tokens.PEAR,
         [bscAddressBook.tokens.SING.symbol]: bscAddressBook.tokens.SING,
       };
+      case 10000:
+      return {};
     /*case 128:
       return {};
     case 43114:
@@ -324,6 +335,8 @@ export const getNetworkZaps = () => {
   switch (window.REACT_APP_NETWORK_ID) {
     case 56:
       return bscZaps;
+    case 10000:
+      return bchZaps;
     /*case 128:
       return hecoZaps;
     case 43114:
@@ -376,6 +389,10 @@ export const getNetworkStables = () => {
         'USDN',
         'WUSD',
         'USDO',
+      ];
+      case 10000:
+      return [
+        'FLEXUSD',
       ];
     /*case 128:
       return ['USDT', 'HUSD'];
@@ -596,6 +613,39 @@ export const getNetworkConnectors = t => {
               const walletLink = new ProviderPackage(options);
 
               const provider = walletLink.makeWeb3Provider('https://bsc-dataseed.binance.org/', 56);
+
+              await provider.enable();
+
+              return provider;
+            },
+          },
+        },
+      };
+      case 10000:
+      return {
+        network: 'smartbch',
+        cacheProvider: true,
+        providerOptions: {
+          injected: {
+            display: {
+              name: 'MetaMask',
+            },
+          },
+          'custom-wc-one': {
+            display: {
+              logo: require(`images/wallets/wallet-connect.svg`),
+              name: 'Wallet Connect',
+              description: t('Scan your WalletConnect to Connect'),
+            },
+            package: WalletConnectProvider,
+            options: {
+              rpc: {
+                1: 'https://smartbch.greyh.at',
+                10000: 'https://smartbch.greyh.at',
+              },
+            },
+            connector: async (ProviderPackage, options) => {
+              const provider = new ProviderPackage(options);
 
               await provider.enable();
 
