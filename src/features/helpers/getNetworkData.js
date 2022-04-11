@@ -210,6 +210,8 @@ export const getNetworkLaunchpools = (networkId = appNetworkId) => {
   switch (networkId) {
     case 56:
       return indexBy(bscStakePools, 'id');
+    case 10000:
+      return indexBy(smartbchStakePools, 'id');
     /*case 128:
       return indexBy(hecoStakePools, 'id');
     case 43114:

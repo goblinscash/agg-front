@@ -1,6 +1,6 @@
 export const smartbchPools = [
   {
-    id: '7',
+    id: 'mistswap-mist-bch',
     name: 'MIST-BCH LP',
     token: 'MIST-BCH MLP',
     tokenDescription: 'Mistswap',
@@ -13,7 +13,7 @@ export const smartbchPools = [
     pricePerFullShare: 1,
     tvl: 0,
     oracle: 'lps',
-    oracleId: '7',
+    oracleId: 'mistswap-mist-bch',
     oraclePrice: 0,
     depositsPaused: false,
     status: 'active',
