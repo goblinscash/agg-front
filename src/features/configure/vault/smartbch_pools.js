@@ -1,4 +1,4 @@
-export const bchPools = [
+export const smartbchPools = [
   {
     id: '7',
     name: 'MIST-BCH LP',
