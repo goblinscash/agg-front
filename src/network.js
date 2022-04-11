@@ -1,6 +1,12 @@
 /* eslint-disable import/first */
 export const allNetworks = [
   {
+    name: 'SmartBCH',
+    asset: 'BCH',
+    id: 10000,
+    hash: '/smartbch',
+  },
+  {
     name: 'BSC',
     asset: 'BSC',
     id: 56,
